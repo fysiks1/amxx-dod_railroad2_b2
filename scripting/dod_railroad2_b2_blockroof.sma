@@ -12,10 +12,13 @@ public plugin_precache()
 
 public plugin_init()
 {
-	register_plugin("dod_railroad2_b2 block roof access", "1.0", "Fysiks")
+	register_plugin("dod_railroad2_b2 block roof access", "2.0", "Fysiks")
 
 	// Block Access to Top of Train Tunnel (Allies Side)
 	create_wall(Float:{239.0, 1450.0, -215.0}, Float:{-16.0, -42.0, -58.0}, Float:{17.0, 50.0, 65.0})
+	
+	// Block Access to Top of Train Tunnel (Allies Spawn)
+	create_wall(Float:{239.0, -1013.0, -215.0}, Float:{-16.0, -42.0, -58.0}, Float:{17.0, 50.0, 65.0})
 }
 
 stock create_wall(Float:fvOrigin[3], Float:mins[3], Float:maxs[3])
